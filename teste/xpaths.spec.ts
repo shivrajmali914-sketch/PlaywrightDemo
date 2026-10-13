@@ -15,4 +15,7 @@ await expect(logo).toBeVisible();
 const logo2: Locator = page.locator("xpath=//img[@alt='m,Stock by Mirae Asset']");
 await expect(logo2).toBeVisible();
 
+const logo3: Locator = page.locator("xpath=//img[@alt='m,Stock by Mirae Asset']");
+await expect(logo3).toBeVisible();
+
 });
