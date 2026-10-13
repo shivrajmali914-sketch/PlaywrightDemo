@@ -1,0 +1,12 @@
+{
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.inlineSuggest.enabled": true,
+  "js/ts.suggest.enabled": true,
+  "js/ts.suggest.completeFunctionCalls": true
+}

@@ -24,9 +24,10 @@ test('single select dropdown', async ({ page }) => {
       console.log(optionText);
       expect(optionText).toContain('India'); // check presence of option in dropdown
 
-//4. printing options  for dropdown 
+ //4. printing options  for dropdown 
       
-
-
-          await page.waitForTimeout(4000);
+     for(const option of optionText){
+     console.log("All avaialble option in dropdown: " + option);
+      }
+     
 })
