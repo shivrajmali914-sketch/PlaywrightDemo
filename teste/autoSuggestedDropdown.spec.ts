@@ -4,6 +4,10 @@ test('Auto suggest dropdown', async({page})=>{
 
 await page.goto("https://www.flipkart.com/");
 
+
+await page.locator("span[class='b3wTlE']").click();
+
+
 await page.locator('input[name="q"]:not([readonly])').fill("smart");
 await page.waitForTimeout(5000);
 
@@ -23,5 +27,17 @@ console.log("printing all options:")
 for(let i=0;i<count;i++){
     console.log(await option.nth(i).innerText())
 }
+
+// select>> click on smartphone option
+
+for(let i=0; i<count;i++){
+    
+    const text = await option.nth(i).innerText();
+    if(text==='smartphone'){
+        await option.nth(i).click();
+        break;
+    }
+}
+
 
 })
