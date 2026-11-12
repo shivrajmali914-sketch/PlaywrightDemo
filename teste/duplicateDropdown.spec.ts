@@ -33,4 +33,6 @@ for(const text of optiontext ){
     
     expect(duplicate.length).toBe(0);
 
+    console.log()
+
 })
